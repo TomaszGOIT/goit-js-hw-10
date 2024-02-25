@@ -4,7 +4,7 @@ const fetchCountries = require('./fetchCountries');
 const debounce = _.debounce;
 const searchBox = document.getElementById('searchBox');
 const countriesList = document.getElementById('countries-list');
-//Nasłuchiwacza na zdarzenie input
+//Nasłuchiwacz na zdarzenie input
 searchBox.addEventListener('input', debounce(handleInput, 300));
 // Funkcja obsługująca zdarzenie input
 async function handleInput() {
