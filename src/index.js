@@ -7,7 +7,7 @@ const countriesList = document.getElementById('countries-list');
 
 searchBox.addEventListener('input', debounce(handleInput, 300));
 
-// Funkcja obsługująca zdarzenie wprowadzania tekstu
+// Funkcja obsługująca wprowadzanie tekstu
 async function handleInput() {
     const searchQuery = searchBox.value.trim();
     if (searchQuery === '') {
